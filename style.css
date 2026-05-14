@@ -6,9 +6,13 @@
     text-decoration: none;
 }
 body {
-    background-color: rgb(43, 68, 6);
+    background-color: #b2fdb2;
     color:rgb(197, 209, 185);
     line-height: 1.6;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 nav {
     display: flex;
@@ -24,19 +28,20 @@ nav {
     z-index: 1000;
 }
 .card {
-    background-color: #054e04;
+    background-color: #b2fdb2;
     padding: 2rem;
     border-radius: 16px;
-    border: 1px solid #eff4f1;
+    border: 1px solid #000000;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
     backface-visibility: hidden;
+    color: #022917;
 }
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0,08);
-    border-color: #eff4f1;
+    border-color: #eff4f4;
 }
 header {
     height: 85vh;
@@ -47,6 +52,11 @@ header {
     background: linear-gradient(-45deg, #627a62, #a4b947, #236a68, #079804);
     animation: gradientBG 15s ease infinite;
     color: #c0c8c0;
+    background-image: url(images/a8a514948908521584b5816728314018.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 @keyframes gradientBG {
     0%{background-color: 0% 50%;}
@@ -63,7 +73,7 @@ header {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 25px;
-    background: #b2fdb2;
+    background-color: #b2fdb2;
     color: #022917;
     text-decoration: none;
     border-radius: 25px;
@@ -77,8 +87,13 @@ header {
 a {
     color:#055e34 ;
 }
+a:hover{
+    cursor: pointer;
+}
 #available {
     padding: 4rem 5%;
+    background-color: #fff;
+    color: #022917;
 }
 #available h2{
     text-align: center;
@@ -110,15 +125,20 @@ footer{
     opacity: 0.6;
 }
 #apply {
-    padding: 4rem 5%;
     background-color: #092a02;
-    border-radius: 20px;
     border-color: #b2fdb2;
-    margin: 2rem;
-    height: 90vh;
+    display: flow-root;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     background: linear-gradient(-45deg, #627a62, #a4b947, #236a68, #079804);
     animation: gradientBG 15s ease infinite;
     color: #c0c8c0;
+    background-image: url(images/83fe84ad443914e9e40acce2dcf002a7.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #000000;
 }
 #apply h1 {
     text-align: center;
@@ -130,7 +150,7 @@ footer{
     gap: 2rem;
 }
 #allInput {
-    background-color: #054e04;
+    background-color: #b2fdb2;
     padding: 2rem;
     border-radius: 16px;
     border: 1px solid #eff4f1;
@@ -138,6 +158,7 @@ footer{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     will-change: transform;
     backface-visibility: hidden;
+    color: #022917;
 }
 #allInput:hover {
     transform: translateY(-8px);
@@ -146,4 +167,10 @@ footer{
 }
 input {
     display: grid;
+    border-radius: 16px;
+    padding: 5px;
+    border-color: #079804;
+}
+input:hover {
+    transform: translateX(8px);
 }
